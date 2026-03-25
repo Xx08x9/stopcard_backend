@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StopKadr</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Каталог товаров</h1>
+    <ul>
+        {% for product in products %}
+        <li>{{ product.name }} — {{ product.price }} сом</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

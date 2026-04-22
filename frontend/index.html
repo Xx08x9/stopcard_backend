@@ -4,9 +4,66 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>frontend</title>
   </head>
   <body>
+<header>
+    <div class="logo">StopKadr</div>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">Акции</a>
+        <a href="#">Контакты</a>
+    </nav>
+
+    <div class="cart">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Фототехника и видеокамеры</h1>
+    <p>Камеры, объективы, аксессуары</p>
+    <button>Перейти в каталог</button>
+</section>
+
+<section class="products">
+    <h2>Каталог товаров</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Sony A7 IV</h3>
+            <p>Профессиональная камера</p>
+            <span>1200$</span>
+            <button onclick="addToCart()">В корзину</button>
+        </div>
+
+        <div class="card">
+            <h3>Canon R5</h3>
+            <p>Камера для фото и видео</p>
+            <span>2500$</span>
+            <button onclick="addToCart()">В корзину</button>
+        </div>
+
+        <div class="card">
+            <h3>GoPro Hero 12</h3>
+            <p>Экшн камера</p>
+            <span>400$</span>
+            <button onclick="addToCart()">В корзину</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 StopKadr Clone (курсовой проект)</p>
+</footer>
+
+<script src="script.js"></script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

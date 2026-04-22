@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'products',
-    'drf_yasg',
+    'shop'
+
 ]
 
 MIDDLEWARE = [
@@ -77,8 +78,9 @@ WSGI_APPLICATION = 'stopcadr.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
         'NAME': 'your_db_name',
         'USER': 'your_db_user',
         'PASSWORD': 'your_db_password',

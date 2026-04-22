@@ -11,3 +11,7 @@ class ProductListView(generics.ListCreateAPIView):
 class ProductDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+
+    from django.http import JsonResponse
+from .models import Product, CartItem
+import json
